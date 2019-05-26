@@ -1,0 +1,105 @@
+@font-face {
+   font-family: "Miso";
+   src: url("../fonts/miso.woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+body {
+   font-family: Miso, sans-serif;
+   background-color: #fdde7e;
+   color: #333;
+}
+
+html,
+body {
+   height: 100vh;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+h2 {
+   font-size: 4.375rem;
+   color: #02995b;
+   font-weight: bold;
+}
+
+h3 {
+   font-size: 3.5rem;
+}
+
+p {
+   font-family: 'Lato', arial;
+   font-size: 1.25rem;
+   font-weight: 300;
+}
+
+img {
+   max-width: 100%;
+   align-self: center;
+}
+
+.coffee__list {
+   display: flex;
+   max-width: 100%;
+   padding-top: 10%;
+   margin: 0 2.5%;
+
+   align-items: center;
+}
+
+.coffee__list--item {
+   background-color: #fff;
+   flex-basis: 30%;
+   margin: 0 0.9375rem;
+   flex-grow: 1;
+   padding-top: 2.625rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   border-radius: 5px;
+   box-shadow: 0px 3px 2px 0px #cab265
+}
+
+.coffee__list--item:nth-child(2) {
+   padding-top: 3.125rem;
+}
+
+.coffee__item--cost {
+   margin-bottom: 1.25rem;
+}
+
+.coffee__item--cost.long {
+   margin-bottom: 1.875rem;
+}
+
+.coffee__item--img {
+   margin-bottom: 1.5625rem;
+}
+
+.coffee__item--img.long {
+   margin-bottom: 2.1875rem;
+}
+
+.coffee__item--title {
+   margin-bottom: 2.1875rem;
+}
+
+.coffee__item--text {
+   line-height: 1.2;
+   width: 50%;
+   text-align: center;
+   margin-bottom: 2.1875rem;
+}
+
+.coffee__item--text.long {
+   margin-bottom: 3.75rem;
+}
