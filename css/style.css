@@ -83,10 +83,45 @@ img {
 
 .coffee__item--img {
    margin-bottom: 1.5625rem;
+   max-width: 100%;
 }
 
-.coffee__item--img.long {
-   margin-bottom: 2.1875rem;
+.coffee__item--container {
+   position: relative;
+}
+.coffee__item--container::after {
+   content: '';
+   position: absolute;
+   background-image: url(../img/bean.png);
+   background-repeat: no-repeat;
+   width: 36px;
+   height: 45px;
+   top: 45%;
+   left: 30%;
+
+}
+.coffee__list--item:hover:nth-child(3) .invert {
+   animation: invert 5s infinite linear;
+}
+@keyframes hue {
+   from {
+       filter: hue-rotate(-360deg);
+   }
+   to {
+       filter: hue-rotate(0deg);
+   }
+}
+@keyframes invert {
+   from {
+      filter:invert(0%); 
+   }
+   to {
+      filter:invert(100%);
+   }
+}
+
+.coffee__list--item:hover{
+   animation: hue 10s infinite linear;
 }
 
 .coffee__item--title {
@@ -102,4 +137,7 @@ img {
 
 .coffee__item--text.long {
    margin-bottom: 3.75rem;
+}
+.orange {
+
 }
